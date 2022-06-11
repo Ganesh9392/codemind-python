@@ -1,0 +1,6 @@
+n=input()
+l=list(n.split(" "))
+ln=len(l)
+l1=list(l[0])
+l2=list(l[ln-1])
+print(min(l1),max(l2))
