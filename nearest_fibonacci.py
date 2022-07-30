@@ -1,32 +1,30 @@
 n=int(input())
 a=0
 b=1
-c=1
-l1=[0,1]
+l=[0,1]
+l1=[]
 l2=[]
-l3=[]
-for i in range(n):
+for i in range(1,1+n):
     c=a+b
     a=b
     b=c
-    l1.append(c)
-if(n in l1):
-    l1.remove(n)
-for i in range(len(l1)):
-    if(l1[i]>n):
-        l3.append(l1[i])
+    l.append(c)
+for i in range(len(l)):
+    if l[i]<n:
+        l1.append(l[i])
     else:
-        l2.append(l1[i])
-l=len(l2)
-if(n<l2[l-1]):
-    r1=l2[1-1]-n
+        l2.append(l[i])
+if n in l:
+    l.remove(n)
+x=max(l1)
+y=min(l2)
+d1=n-max(l1)
+d2=min(l2)-(n)
+if(d1==d2):
+    print(x,y)
+elif(d1<d2):
+    print(x)
 else:
-    r1=n-l2[l-1]
-r2=l3[0]-n
+    print(y)
 
-if(r2==r1):
-    print(l2[l-1],l3[0])
-elif(r2>r1):
-    print(l2[l-1])
-else:
-    print(l3[0])
+    
