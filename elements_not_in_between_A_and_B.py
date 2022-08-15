@@ -1,15 +1,13 @@
-num=int(input())
-l=list(map(int,input().split()))
+n=int(input())
+k=list(map(int,input().split()))
 a,b=map(int,input().split())
-r1=int(a)
-r2=int(b)
-big=max(r1,r2)
-small=min(r1,r2)
+p=max(a,b)
+s=min(a,b)
 c=0
-for i in range(len(l)):
-    if(l[i]<small or l[i]>big):
+for i in range(len(k)):
+    if k[i]>p or k[i]<s:
         c+=1
-        print(l[i],end=" ")
-if(c==0):
-    print(-1)
+        print(k[i],end=" ")
+if c==0:
+    print("-1")
     
