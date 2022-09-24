@@ -18,6 +18,7 @@ for i in range(len(l)):
         if l[i]*l[j]==num:
             t1=l[i]
             t2=l[j]
+            break
 if t1==0 and t2==0:
     print(-1)
 else:
