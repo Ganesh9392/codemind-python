@@ -1,12 +1,12 @@
-num=int(input())
+n=int(input())
 l=[]
-for i in range(num):
-    n=int(input())
-    l.append(n)
-w=int(input())
+for i in range(n):
+    t=int(input())
+    l.append(t)
 s=0
+t=int(input())
 for i in l:
-    if i>w:
+    if i>t:
         s+=2
     else:
         s+=1
